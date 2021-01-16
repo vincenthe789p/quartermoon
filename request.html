@@ -224,7 +224,7 @@ $.ajax({
 	   data: form.serialize(), // serializes the form's elements.
 	   success: function(data)
 	   {
-		   $("#result").innerHTML = data; // show response from the php script.
+		   $("#result")[0].innerHTML = data; // show response from the php script.
 	   }
 	 });
 
