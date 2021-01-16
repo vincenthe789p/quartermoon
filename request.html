@@ -8,7 +8,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 	<meta name="msapplication-tap-highlight" content="no">
 	<link href="https://d1di2lzuh97fh2.cloudfront.net/files/3t/3tl/3tlkov.css?ph=9c825291c8" rel="stylesheet">
-    <link href="https://d1di2lzuh97fh2.cloudfront.net/files/05/05z/05zrkp.css?ph=9c825291c8" rel="stylesheet">
+	<link href="https://d1di2lzuh97fh2.cloudfront.net/files/05/05z/05zrkp.css?ph=9c825291c8" rel="stylesheet">
+	
 <link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/16/16r/16r3an.css?ph=9c825291c8" data-wnd_color_scheme_file=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/05/05i/05i2vw.css?ph=9c825291c8" data-wnd_additive_color_file=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/1q/1q6/1q611f.css?ph=9c825291c8" data-wnd_typography_file=""><meta name="description" content="Please leave us your details and we'll get back to you as soon as possible."><meta name="keywords" content=""><meta name="generator" content="Webnode 2"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=no">
 
 <meta property="og:url" content="https://ndd0.webnode.com/copy-of-dashboard/"><meta property="og:title" content="Help :: NDD"><meta property="og:type" content="article"><meta property="og:description" content="Please leave us your details and we'll get back to you as soon as possible."><meta property="og:site_name" content="NDD"><meta property="og:article:published_time" content="2021-01-16T00:00:00+0100"><meta name="robots" content="index,follow"><link rel="canonical" href="https://ndd0.webnode.com/copy-of-dashboard/"><script>window.checkAndChangeSvgColor=function(c){try{var a=document.getElementById(c);if(a){c=[["border","borderColor"],["outline","outlineColor"],["color","color"]];for(var h,b,d,f=[],e=0,m=c.length;e<m;e++)if(h=window.getComputedStyle(a)[c[e][1]].replace(/\s/g,"").match(/^rgb[a]?\(([0-9]{1,3}),([0-9]{1,3}),([0-9]{1,3})/i)){b="";for(var g=1;3>=g;g++)b+=("0"+parseInt(h[g],10).toString(16)).slice(-2);"0"===b.charAt(0)&&(d=parseInt(b.substr(0,2),16),d=Math.max(16,d),b=d.toString(16)+b.slice(-4));f.push(c[e][0]+"="+b)}if(f.length){var k=a.getAttribute("data-src"),l=k+(0>k.indexOf("?")?"?":"&")+f.join("&");a.src!=l&&(a.src=l,a.outerHTML=a.outerHTML)}}}catch(n){}};</script><link rel="stylesheet" href="https://use.typekit.net/njp4uhl.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -123,24 +124,24 @@
 <h3 class="wnd-align-center">Please leave us your details and we'll get back to you as soon as possible.</h3>
 </div>
 </div><div class="form b b-s b-form-default f-rh-normal f-rg-normal f-br-none default cf">
-	<form action="" method="post">
+	<form action="request.php" method="post" id="idForm">
 
 		<fieldset class="form-fieldset">
 			<div><div class="form-input form-text cf wnd-form-field wnd-required">
 	<label for="field-wnd_ShortTextField_763365"><span class="it inline-text link">
 	<span class="it-c">Your Name</span>
 </span></label>
-	<input id="field-wnd_ShortTextField_763365" name="wnd_ShortTextField_763365" required value="" type="text" maxlength="150">
+	<input id="field-wnd_ShortTextField_763365" name="name" required value="" type="text" maxlength="150">
 </div><div class="form-input form-tel cf wnd-form-field wnd-required">
 	<label for="field-wnd_PhoneField_723990"><span class="it inline-text link">
 	<span class="it-c">Phone number</span>
 </span></label>
-	<input id="field-wnd_PhoneField_723990" name="wnd_PhoneField_723990" required value="" type="tel" pattern="[\.\+\-\(\)0-9 ]+">
+	<input id="field-wnd_PhoneField_723990" name="phone" required value="" type="tel" pattern="[\.\+\-\(\)0-9 ]+">
 </div><div class="form-input form-email cf wnd-form-field wnd-required">
 	<label for="field-wnd_EmailField_82812"><span class="it inline-text link">
 	<span class="it-c">Email</span>
 </span></label>
-	<input id="field-wnd_EmailField_82812" name="wnd_EmailField_82812" required value="@" type="email" maxlength="255">
+	<input id="field-wnd_EmailField_82812" name="email" required value="@" type="email" maxlength="255">
 </div><div class="form-input form-group cf wnd-form-field">
 	<label><span class="it inline-text link">
 	<span class="it-c">Requested Aid</span>
@@ -156,7 +157,7 @@
 						<span>Shelter</span>
 					</span>
 				</label>
-				<input name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_849573" id="option-wnd_CheckboxGroupOption_849573" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_849573" id="option-wnd_CheckboxGroupOption_849573" type="checkbox">
+				<input name="shelter" value="wnd_CheckboxGroupOption_849573" id="option-wnd_CheckboxGroupOption_849573" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_849573" id="option-wnd_CheckboxGroupOption_849573" type="checkbox">
 				<div class="checkbox"></div>
 			</div><div class="form-input form-checkbox">
 
@@ -165,7 +166,7 @@
 						<span>Healthcare</span>
 					</span>
 				</label>
-				<input name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_346324" id="option-wnd_CheckboxGroupOption_346324" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_346324" id="option-wnd_CheckboxGroupOption_346324" type="checkbox">
+				<input name="health" value="wnd_CheckboxGroupOption_346324" id="option-wnd_CheckboxGroupOption_346324" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_346324" id="option-wnd_CheckboxGroupOption_346324" type="checkbox">
 				<div class="checkbox"></div>
 			</div><div class="form-input form-checkbox">
 
@@ -174,7 +175,7 @@
 						<span>Lost Contact of Family</span>
 					</span>
 				</label>
-				<input name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_992607" id="option-wnd_CheckboxGroupOption_992607" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_992607" id="option-wnd_CheckboxGroupOption_992607" type="checkbox">
+				<input name="fam" value="wnd_CheckboxGroupOption_992607" id="option-wnd_CheckboxGroupOption_992607" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_992607" id="option-wnd_CheckboxGroupOption_992607" type="checkbox">
 				<div class="checkbox"></div>
 			</div><div class="form-input form-checkbox">
 
@@ -183,7 +184,7 @@
 						<span>Other</span>
 					</span>
 				</label>
-				<input name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_19875" id="option-wnd_CheckboxGroupOption_19875" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_19875" id="option-wnd_CheckboxGroupOption_19875" type="checkbox">
+				<input name="other" value="wnd_CheckboxGroupOption_19875" id="option-wnd_CheckboxGroupOption_19875" type="checkbox" name="wnd_CheckboxGroupField_398537[]" value="wnd_CheckboxGroupOption_19875" id="option-wnd_CheckboxGroupOption_19875" type="checkbox">
 				<div class="checkbox"></div>
 			</div>
 
@@ -193,7 +194,7 @@
 	<label for="field-wnd_LongTextField_760889"><span class="it inline-text link">
 	<span class="it-c">Message (Location)</span>
 </span></label>
-	<textarea rows="5" id="field-wnd_LongTextField_760889" name="wnd_LongTextField_760889" required></textarea>
+	<textarea rows="5" id="field-wnd_LongTextField_760889" name="message" required></textarea>
 </div></div>
 		</fieldset>
 
@@ -206,6 +207,30 @@
 		</div>
 
 	</form>
+	<div id="result"></div>
+	<script>
+
+		// this is the id of the form
+$("#idForm").submit(function(e) {
+
+e.preventDefault(); // avoid to execute the actual submit of the form.
+
+var form = $(this);
+var url = form.attr('action');
+
+$.ajax({
+	   type: "POST",
+	   url: url,
+	   data: form.serialize(), // serializes the form's elements.
+	   success: function(data)
+	   {
+		   $("#result").innerHTML = data; // show response from the php script.
+	   }
+	 });
+
+
+});
+	</script>
 
 	
 </div></div>
@@ -252,6 +277,10 @@
 			</footer>
 		</div>
 	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
 	
 <!--<div id="wnd_footer"><style type="text/css">#wnd_footer {display: block; box-sizing: border-box; text-align: center; overflow: hidden; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; position: relative; width: 100%; font-family: Arial, Roboto, Helvetica, sans-serif; font-weight: normal; font-style: normal; font-size: 15px; line-height: 1.5; background-color: rgba(0, 0, 0, 0.7);}#wnd_footer a {color: #fff; text-decoration: none; display: inline-block;}#wnd_footer_left {width: 100%;}#wnd_footer_left_wrapper {padding: 12px 12px 6px;}#wnd_footer_right {width: 100%;}#wnd_footer_right_wrapper {padding: 6px 12px 14px;}#wnd_footer_logo {background: url(https://d1di2lzuh97fh2.cloudfront.net/client/img/wnd-logo2.svg?ph=9c825291c8) no-repeat; display: inline-block; width: 103px; height: 20px; opacity: .83;}#wnd_footer_logo b {opacity: 0;}@media only screen and (min-width: 480px) {#wnd_footer_left {float: left; min-height: 60px; width: auto; display: table;}#wnd_footer_left_wrapper {text-align: left; padding: 8px 160px 8px 12px; display: table-cell; vertical-align: middle;}#wnd_footer_right {position: absolute; top: 0; left: auto; right: 12px; bottom: 0; width: auto;}#wnd_footer_right_wrapper {text-align: right; padding: 19px 0;}}@media only screen and (min-width: 768px) {#wnd_footer_left_wrapper {padding: 16px 160px 16px 20px;}#wnd_footer_right {right: 20px;}}@media only screen and (min-width: 1200px) {#wnd_footer_left_wrapper {padding-left: 30px;}#wnd_footer_right {right: 30px;}}@media print {#wnd_footer style {display: none !important;}}</style><div  id="wnd_footer_left"><div id="wnd_footer_left_wrapper"><a  href="https://us.webnode.com?utm_source=text&amp;utm_medium=footer&amp;utm_campaign=free1&amp;utm_content=wnd2" target="_blank" rel="nofollow" >Create a free website</a></div></div><div id="wnd_footer_right"><div id="wnd_footer_right_wrapper"><a id="wnd_footer_logo" href="https://us.webnode.com?utm_source=button&amp;utm_medium=footer&amp;utm_campaign=free1&amp;utm_content=wnd2" target="_blank" rel="nofollow" ><b>Webnode</b></a></div></div></div><script type="application/javascript">!function(){if(0==document.getElementsByClassName("wnd-cms").length)for(var e=document.getElementsByClassName("column-content"),s=0;s<e.length;s++){var t=e[s].querySelector("div"),l=t.getElementsByClassName("b-text-c");void 0!=l[0]&&t.firstChild==t.lastChild&&""===l[0].innerText&&(e[s].classList?e[s].classList.add("column-empty"):(e[s].classList?e[s].classList.contains("column-empty"):new RegExp("\\bcolumn-empty\\b").test(e[s].className))&&(e[s].className+=" column-empty"))}}()</script>-->
 	<script type="text/javascript" src="https://d1di2lzuh97fh2.cloudfront.net/files/45/45m/45m57i.js?ph=9c825291c8"></script>
