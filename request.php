@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file_name='StudentsData'. '.json'; 
       
     if(file_put_contents("$file_name", get_data())) { 
-        echo '<p style="text-align:center;color:white;">Thank you for your request. We will be in touch with you as soon as possible.</p>'; 
+        echo '<p style="text-align:center;color:black;">Thank you for your request. We will be in touch with you as soon as possible.</p>'; 
     }                 
     else { 
         echo 'Error!';                 
